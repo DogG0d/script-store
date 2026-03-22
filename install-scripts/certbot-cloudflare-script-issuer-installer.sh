@@ -14,7 +14,7 @@ chmod 700 ${LETS_ENCRYPT_SECRETS_PATH}
 
 # Create cloudflare.ini with placeholder
 cat > ${LETS_ENCRYPT_SECRETS_PATH}/cloudflare.ini << EOF
-DNS_CLOUDFLARE_API_TOKEN=your_token_here
+dns_cloudflare_api_token=your_token_here
 EOF
 chown root:root ${LETS_ENCRYPT_SECRETS_PATH}/cloudflare.ini
 chmod 600 ${LETS_ENCRYPT_SECRETS_PATH}/cloudflare.ini
